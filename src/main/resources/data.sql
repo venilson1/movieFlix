@@ -54,7 +54,8 @@ INSERT INTO tb_movie (title, sub_title, year, img_url, synopsis, genre_id) VALUE
 INSERT INTO tb_movie (title, sub_title, year, img_url, synopsis, genre_id) VALUES ('The Hangover', 'The Hangover', 2009, 'https://upload.wikimedia.org/wikipedia/pt/b/b9/Hangoverposter09.jpg', 'Dois dias antes de seu casamento, Doug e três amigos vão de carro até Las Vegas para uma louca e memorável despedida de solteiro.', 4);
 INSERT INTO tb_movie (title, sub_title, year, img_url, synopsis, genre_id) VALUES ('The Hangover', 'The Hangover', 2009, 'https://upload.wikimedia.org/wikipedia/pt/b/b9/Hangoverposter09.jpg', 'Dois dias antes de seu casamento, Doug e três amigos vão de carro até Las Vegas para uma louca e memorável despedida de solteiro.', 5);
 
-INSERT INTO tb_review (text, movie_id, user_id) VALUES ('Legal', 1, 1);
+INSERT INTO tb_review (text, movie_id, user_id) VALUES ('Não entendi o filme', 1, 1);
+INSERT INTO tb_review (text, movie_id, user_id) VALUES ('Assisitr pela segunda vez, agora ta fazendo sentindo', 1, 1);
 INSERT INTO tb_review (text, movie_id, user_id) VALUES ('Maravilho', 2, 1);
 INSERT INTO tb_review (text, movie_id, user_id) VALUES ('Filme muito bom', 3, 1);
 INSERT INTO tb_review (text, movie_id, user_id) VALUES ('Legal', 4, 1);
