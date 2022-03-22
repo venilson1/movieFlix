@@ -2,13 +2,21 @@ package com.devsuperior.movieflix.dto;
 
 import java.io.Serializable;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
 import com.devsuperior.movieflix.entities.User;
 
 public class UserDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Long id;
+	
+	@Size(min = 5, max = 60, message = "Deve ter entre 5 e 60 caracteres")
+	@NotBlank(message = "Campo obrigatório")
 	private String name;
+	
+	@NotBlank(message = "Favor entrar com um e-mail válido")
 	private String email;
 
 	public UserDTO() {

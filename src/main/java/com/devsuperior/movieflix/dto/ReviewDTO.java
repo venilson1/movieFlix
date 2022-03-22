@@ -2,6 +2,9 @@ package com.devsuperior.movieflix.dto;
 
 import java.io.Serializable;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
 import com.devsuperior.movieflix.entities.Review;
 import com.devsuperior.movieflix.entities.User;
 
@@ -9,6 +12,9 @@ public class ReviewDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Long id;
+	
+	@Size(min = 5, message = "Deve ter no mínimo 5 caracteres")
+	@NotBlank(message = "Campo obrigatório")
 	private String text;
 	private String userName;
 	private Long movieId;
