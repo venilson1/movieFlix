@@ -127,5 +127,4 @@ public class Movie implements Serializable {
 		Movie other = (Movie) obj;
 		return Objects.equals(id, other.id);
 	}
-
 }
